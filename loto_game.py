@@ -143,7 +143,6 @@ class Game:
 
             for player in self.players:
                 print(f'Ход игрока {player.name}')
-                print(len(self.players))
 
                 if player.running(num):                 # Проверяем ответ игрока
                     if player.card.chekup_card or len(self.players) == 1:      # Если в карточке игрока закончились цифры
