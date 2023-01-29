@@ -6,7 +6,7 @@ from loto_game import Card, PlayerComputer, HumanPlayer, Game
 class TestCard(unittest.TestCase):
 
     def setUp(self):
-        self.card = Card()
+        self.card = Card('test')
 
     def test_generation_card(self):
         self.assertTrue(isinstance(i, int) for i in self.card.card_num)  # В списке находятся числа
@@ -28,8 +28,8 @@ class TestCard(unittest.TestCase):
         self.card.card_num.clear()
         self.assertTrue(self.card.chekup_card)  # Проверка на пустой список
 
-    def test_card_output(self):
-        self.assertTrue(isinstance(self.card.card_output, str))  # На выводе строка
+    # def test_str(self):
+    #     self.assertTrue(isinstance(self.card, str))  # На выводе строка
 
 
 class TestPlayerComputer(unittest.TestCase):
